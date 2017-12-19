@@ -25,8 +25,8 @@ func main() {
 	engine.Accept(wshttpServer)
 	engine.Accept(TcpServer)
 
-	fmt.Println("Yizheng msg service ws port", strconv.Itoa(wsMsgPort))
-	fmt.Println("Yizheng msg service tcp port", strconv.Itoa(tcpMsgPort))
+	fmt.Println("yiyimqtt ws port", strconv.Itoa(wsMsgPort))
+	fmt.Println("yiyimqtt tcp port", strconv.Itoa(tcpMsgPort))
 
 	signalChan := make(chan os.Signal, 1)
 	cleanupDone := make(chan bool)
